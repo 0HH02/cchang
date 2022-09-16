@@ -4,3 +4,320 @@
     padding: 0;
     margin: 0;
 }
+html,
+body {
+    background-color: white;
+  font-size: 65%;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+.site-header{
+  background-image: url(/img/thumb-1920-437716.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-width: 60rem;
+  position: relative;
+}
+.site-header::after{
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.contenido-header
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contenedor{
+  max-width: 55rem;
+  margin: 0 auto 0 auto;
+}
+
+.barra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1;
+}
+.navegacion{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navegacion a
+{
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.navegacion a:hover{
+  color: #e98e28e1;
+}
+
+.contenido-header h1{
+  color: white;
+  max-width: 25rem;
+  padding-bottom: 5rem;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 1;
+  margin: auto auto;
+  text-align: center;
+}
+footer{
+  background-color: rgb(41, 41, 41);
+  padding: 0.5rem;
+  
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: white;
+}
+.footer .navegacion a{
+  font-size: 0.7rem;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    max-width: 90%;
+    margin: 0 auto 3rem auto;
+}
+.servicios h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.servicios h2::after{
+    content: '';
+    width: 12rem;
+    height: 0.2rem;
+    background-color: #ffa135;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icono-servicio{
+    background-color: #ffa135;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.iconos-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+.iconos-servicios h3{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+.iconos-servicios p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.iconos-servicios .icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 0 auto 0 auto;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.nosotros-principal{
+    background-image: url(/img/nosotros.jpg);
+    background-attachment: fixed;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 3rem 0;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.nosotros-principal::after{
+    content: '';
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.nosotros-principal h3{
+    color: #ffa135;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+    position: relative;
+    max-width: 55rem;
+    margin: 0 auto 0 auto;
+    padding: 1rem 0 0 0;
+    z-index: 1;
+}
+.nosotros-principal .contenedor{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.nosotros-principal .contenedor{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros-principal .contenedor .contenido-nosotros{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    font-weight: 300;
+    font-size: 1.1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.celdas span{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #ffa135;
+    font-weight: 400;
+}
+.celdas{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+main h2{
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 55rem;
+    margin: 0 auto 3rem auto;
+    padding: 1rem 0 0 0;
+    position: relative;
+    
+}
+main h2::after{
+    content: '';
+    width: 12rem;
+    height: 0.2rem;
+    background-color: #ffa135;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main .contenedor-naranja{
+    background-image: url(/img/fondoNaranja.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto 0 auto;
+    max-width: 85%;
+    height: 75vh;
+    margin-bottom: -31%;
+    border-radius: 1rem 1rem 0 0;
+}
+.ultimos-proyectos{
+    background-color: white;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+}
+.contenedor-proyecto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.comentario-proyecto{
+    display: flex;
+    font-weight: 300;
+    flex-direction: column;
+    max-width: 50%;
+    line-height: 1.5;
+    justify-content: center;
+    padding: 0 1rem;
+    position: relative;
+}
+.comentario-proyecto::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2rem;
+    width: 2.3rem;
+    background-image: url(/img/comillas.png);
+    right: 0;
+    top: 0;
+    left: -1.6rem;
+    bottom: 0;
+}
+.comentario-proyecto :last-child{
+    margin: 0;
+    font-size: 1rem;
+}
+.comentario-proyecto :last-child span{
+    display: block;
+    font-weight: 400;
+}
+
+
+.foto-proyecto{
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.5);
+}
+.boton{
+    background-color: white;
+    color: white;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 1rem;
+} 
