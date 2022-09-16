@@ -31,7 +31,7 @@ export default function Home() {
               <a href="nosotros.html">Nosotros</a>
               <a href="proyectos.html">Proyectos</a>
               <a href="servicios.html">Servicios</a>
-              <a href="contacto.html">Contacto</a>
+              <a href="/Contact">Contacto</a>
             </nav>
           </div>
           <h1>Construimos el futuro en el presente</h1>
