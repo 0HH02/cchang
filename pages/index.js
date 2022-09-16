@@ -132,7 +132,7 @@ export default function Home() {
                     <a href="nosotros.html">Nosotros</a>
                     <a href="proyectos.html">Proyectos</a>
                     <a href="servicios.html">Servicios</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="/Contacto">Contacto</a>
                 </nav>
                 <p>Todos los Derechos Reservados &copy; </p>
             </div>
